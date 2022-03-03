@@ -39,6 +39,35 @@
 		"prefix": ["hook", "hooked", "hookcomponent"],
 	},
 
+	"HookForRodux": {
+		"body": [
+			"local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")",
+			"local Hook = require(ReplicatedStorage.Shared.Utility.Hook)",
+			"local Roact = require(ReplicatedStorage.Packages.Roact)",
+			"local RoduxHooks = require(ReplicatedStorage.Packages.RoduxHooks)",
+			"",
+			"export type I${0:$TM_FILENAME_BASE}Props = {}",
+			"",
+			"local function ${0:$TM_FILENAME_BASE}(props: I${0:$TM_FILENAME_BASE}Props, hooks)",
+			"\tlocal dispatch = RoduxHooks.useDispatch(hooks)",
+			"\tlocal ${1:propertyName} = RoduxHooks.useSelector(hooks, function(state)",
+			"\t\treturn state.$1",
+			"\tend)",
+			"",
+			"\treturn Roact.createElement()",
+			"end",
+			"",
+			"return Hook(${0:$TM_FILENAME_BASE}, {",
+			"\tcomponentType = \"PureComponent\",",
+			"\tname = \"${0:$TM_FILENAME_BASE}\",",
+			"})",
+			"",
+		],
+
+		"description": "Creates a new hooked component that uses RoduxHooks.",
+		"prefix": ["hookrodux", "roduxhook", "roduxhooked", "hookedrodux", "roduxhookcomponent", "hookroduxcomponent"],
+	},
+
 	"HookStory": {
 		"body": [
 			"local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")",

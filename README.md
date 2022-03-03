@@ -9,3 +9,5 @@ Furthermore, the base repository has a few packages setup and ready to go. These
 - [Rodux](https://github.com/Roblox/rodux/)
 - [RoactHooks](https://github.com/Kampfkarren/roact-hooks/)
 - [RoduxHooks](https://github.com/SolarHorizon/rodux-hooks/)
+
+There is also snippets specifically for Roact, RoactHooks, and RoduxHooks already made.
