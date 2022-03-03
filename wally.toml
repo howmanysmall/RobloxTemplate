@@ -1,0 +1,11 @@
+[package]
+name = "howmanysmall/robloxtemplate"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Roact = "roblox/roact@1.4.2"
+RoactHooks = "kampfkarren/roact-hooks@0.3.0"
+Rodux = "roblox/rodux@3.0.0"
+RoduxHooks = "solarhorizon/rodux-hooks@0.2.1"
